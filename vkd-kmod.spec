@@ -40,6 +40,8 @@ Provides:   %{kmod_name}-kmod = %{?epoch:%{epoch}:}%{version}-%{release}
 Requires:   module-init-tools
 
 %description -n kmod-%{kmod_name}
+Luna PCI-1200 and PCI-7000 Driver (PCI Crypto Controller).
+
 This package provides the %{kmod_name} kernel module(s) built for the Linux kernel
 using the %{_target_cpu} family of processors.
 
