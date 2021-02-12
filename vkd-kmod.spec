@@ -15,7 +15,7 @@
 
 Name:           %{kmod_name}-kmod
 Version:        6.3.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Luna PCI driver
 License:        Safenet
 URL:            https://cpl.thalesgroup.com/encryption/hardware-security-modules/general-purpose-hsms
@@ -105,5 +105,8 @@ rm -f %{buildroot}/lib/modules/%{kversion}.%{_target_cpu}/modules.*
 %{_bindir}/vreset
 
 %changelog
+* Fri Feb 12 2021 Simone Caronni <negativo17@gmail.com> - 6.3.0-2
+- Expand description of built module.
+
 * Fri Jan 22 2021 Simone Caronni <negativo17@gmail.com> - 6.3.0-1
 - First build based on what is contained in 10.3.0-275 sources.
